@@ -1,8 +1,8 @@
 <?php 
 session_start();
 ob_start();
-      include'../model/user.php';
-      include'../model/connect.php';
+      include'model/user.php';
+      include'model/connect.php';
  if((isset($_POST['signin']))&&($_POST['signin'])){
   $user=$_POST['username'];
   $user=$_POST['password'];

@@ -2,6 +2,7 @@
 <?php 
   include'view/nav.php';
   include'map.php';
+  
 ?>
 
 <!DOCTYPE html>
