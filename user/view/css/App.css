@@ -5,7 +5,9 @@
  */
 
 /*add font family, background image*/
-
+.nav .navbar-nav {
+  z-index: 1000;
+}
 body {
   color: #5bc0de !important;
   font-family: "Poppins", sans-serif !important;
