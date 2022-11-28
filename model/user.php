@@ -1,9 +1,10 @@
 <?php 
  function checkuser($user,$pass){
   $conn = new mysqli('localhost','root','','map_api');
-  $stmt = $conn->prepare("SELECT * FROM user WHERE username='".$user."'AND password='".$pass."'");
+  $sql = "SELECT * FROM user WHERE username='".$user."'AND password='".$pass."'";
+  $stmt = $conn->prepare($sql);
   $stmt->execute();
-  $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+  $row=mysqli_fetch_assoc($stmt);
   $kq = $stmt->fetchAll();
   return $kq[0].['role'];
  }

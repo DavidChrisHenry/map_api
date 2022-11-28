@@ -1,18 +1,4 @@
-<?php
-session_start();
-ob_start();
-include'../model/connect.php';
-include'../model/user.php';
-if((isset($_POST['signin']))&&($_POST['signin'])){
- $user=$_POST['username'];
- $pass=$_POST['password'];
- $role=checkuser($user,$pass);
- $_SESSION['role']=$role;
- if($role==1) header('location:index.php');
- else header('location: login.php');
-}
-?>
-
+<?php include'../controller/adminController.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,10 +14,10 @@ if((isset($_POST['signin']))&&($_POST['signin'])){
 
 <body>
  <h5 class="card-title mb-5 fw-light fs-5">Admin Login</h5>
- <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+ <form action="index.php?act=login" method="post">
   <input type="text" placeholder="username" name="username">
   <input type="text" placeholder="username" name="password">
-  <input type="submit" value="Đăng nhập" name="signin">
+  <input type="submit" value="Đăng nhập" name="login">
  </form>
 </body>
 

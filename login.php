@@ -1,16 +1,5 @@
 <?php 
-session_start();
-ob_start();
-      include'model/user.php';
-      include'model/connect.php';
- if((isset($_POST['signin']))&&($_POST['signin'])){
-  $user=$_POST['username'];
-  $pass=$_POST['password'];
-  $role=checkuser($user,$pass);
-  $_SESSION['role']=$role;
-  if($role==0)header('index.php');
-  else header('login.php');
- }
+include "controller/userController.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,10 +16,10 @@ ob_start();
 
 <body>
  <h5 class="card-title text-center mb-5 fw-light fs-5">User Login</h5>
- <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+ <form action="index.php?act=login" method="post">
   <input type="text" placeholder="username" name="username">
   <input type="text" placeholder="username" name="password">
-  <input type="submit" value="Đăng nhập" name="signin">
+  <input type="submit" value="Đăng nhập" name="login">
  </form>
 </body>
 

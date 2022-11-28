@@ -32,7 +32,7 @@
      <span class="icon-bar"></span>
      <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="index.php">HOME</a>
+    <a class="navbar-brand" href="index.php?act=admin">HOME</a>
    </div>
 
    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -46,7 +46,7 @@
       <a href="index.php?act=them" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
        aria-expanded="false">Thêm <span class="caret"></span></a>
       <ul class="dropdown-menu">
-       <li><a href="index.php?act=logout">Đăng xuất</a></li>
+       <li><a href="index.php?act=logout" name="logout">Đăng xuất</a></li>
        <li><a href="index.php?act=setting">Cài đặt</a></li>
        <li><a href="index.php?act=huongdan">Hướng dẫn</a></li>
       </ul>
