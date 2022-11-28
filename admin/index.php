@@ -1,4 +1,16 @@
 ﻿<?php include'view/nav.php'?>
+<?php 
+if(isset($_GET['act'])&&($_GET['act']))
+switch ($_GET['act']){
+ case 'lienhe':
+  include "view/lienhe.php";
+  break; case 'info':
+   include "view/thongtin.php";
+   break; 
+}else{
+ include "view/home.php";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +24,6 @@
 </head>
 
 <body>
- <h1>Welcome Admin</h1>
 </body>
 
 </html>

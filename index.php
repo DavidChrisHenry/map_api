@@ -10,6 +10,9 @@ if(isset($_GET['act'])&&($_GET['act']))
    break; case 'info':
     include "view/thongtin.php";
     break; 
+    case 'point':
+    include "view/timdiadiem.php";
+    break;
  }else{
   include "view/home.php";
  }

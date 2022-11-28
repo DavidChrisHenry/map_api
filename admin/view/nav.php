@@ -32,36 +32,23 @@
      <span class="icon-bar"></span>
      <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="index.php">Quản lý</a>
+    <a class="navbar-brand" href="index.php">HOME</a>
    </div>
 
    <!-- Collect the nav links, forms, and other content for toggling -->
    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
-     <li class="active"><a href="#">Thông tin <span class="sr-only">(current)</span></a></li>
-     <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-       aria-expanded="false">Công cụ <span class="caret"></span></a>
-      <ul class="dropdown-menu">
-       <li><a href="#">Tìm đường đi</a></li>
-       <li role="separator" class="divider"></li>
-       <li><a href="#">Tìm địa điểm</a></li>
-      </ul>
-     </li>
+     <li class="active"><a href="index.php?act=info">Thông tin <span class="sr-only">(current)</span></a></li>
     </ul>
-    <form class="navbar-form navbar-left">
-     <div class="form-group">
-      <input type="text" class="form-control" placeholder="Search">
-     </div>
-     <button type="submit" class="btn btn-default">Submit</button>
-    </form>
     <ul class="nav navbar-nav navbar-right">
+     <li><a href="index.php?act=lienhe">Liên hệ</a></li>
      <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+      <a href="index.php?act=them" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
        aria-expanded="false">Thêm <span class="caret"></span></a>
       <ul class="dropdown-menu">
-       <li><a href="#">Đăng xuất</a></li>
-       <li><a href="#">Cài đặt</a></li>
+       <li><a href="index.php?act=logout">Đăng xuất</a></li>
+       <li><a href="index.php?act=setting">Cài đặt</a></li>
+       <li><a href="index.php?act=huongdan">Hướng dẫn</a></li>
       </ul>
      </li>
     </ul>
