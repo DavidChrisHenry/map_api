@@ -1,13 +1,20 @@
 <?php 
 include'view/nav.php';
-if(isset($_GET['act'])){
+if(isset($_GET['act'])&&($_GET['act']))
  switch ($_GET['act']){
   case 'street':
-   $kq=getalldm();
-   include "street2point.php";
+   include "view/street2point.php";
+   break; 
+  case 'lienhe':
+   include "view/lienhe.php";
+   break; case 'info':
+    include "view/thongtin.php";
+    break; 
+ }else{
+  include "view/home.php";
  }
-}
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +26,6 @@ if(isset($_GET['act'])){
 </head>
 
 <body>
-
 </body>
 
 </html>

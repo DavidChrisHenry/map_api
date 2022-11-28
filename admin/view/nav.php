@@ -32,7 +32,7 @@
      <span class="icon-bar"></span>
      <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="#">HOME</a>
+    <a class="navbar-brand" href="index.php">Quản lý</a>
    </div>
 
    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -56,14 +56,12 @@
      <button type="submit" class="btn btn-default">Submit</button>
     </form>
     <ul class="nav navbar-nav navbar-right">
-     <li><a href="#">Liên hệ</a></li>
      <li class="dropdown">
       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-       aria-expanded="false">Dropdown <span class="caret"></span></a>
+       aria-expanded="false">Thêm <span class="caret"></span></a>
       <ul class="dropdown-menu">
        <li><a href="#">Đăng xuất</a></li>
        <li><a href="#">Cài đặt</a></li>
-       <li><a href="#">Hướng dẫn</a></li>
       </ul>
      </li>
     </ul>

@@ -5,7 +5,7 @@ include'../model/connect.php';
 include'../model/user.php';
 if((isset($_POST['signin']))&&($_POST['signin'])){
  $user=$_POST['username'];
- $user=$_POST['password'];
+ $pass=$_POST['password'];
  $role=checkuser($user,$pass);
  $_SESSION['role']=$role;
  if($role==1) header('location:index.php');
@@ -27,8 +27,8 @@ if((isset($_POST['signin']))&&($_POST['signin'])){
 </head>
 
 <body>
- <h5 class="card-title text-center mb-5 fw-light fs-5">Sign In</h5>
- <form>
+ <h5 class="card-title mb-5 fw-light fs-5">Admin Login</h5>
+ <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
   <input type="text" placeholder="username" name="username">
   <input type="text" placeholder="username" name="password">
   <input type="submit" value="Đăng nhập" name="signin">

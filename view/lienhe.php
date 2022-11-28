@@ -1,4 +1,3 @@
-﻿<?php include'view/nav.php'?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,13 +5,11 @@
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link href="view/app.css" type="css">
- <link href="../Content/bootstrap.min.css" rel="stylesheet" />
- <title>Admin</title>
+ <title>Liên hệ</title>
 </head>
 
 <body>
- <h1>Welcome Admin</h1>
+ <h1>Liên hệ</h1>
 </body>
 
 </html>
