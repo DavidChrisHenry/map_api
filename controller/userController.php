@@ -5,6 +5,9 @@ switch ($_GET['act']){
  case 'street':
   include "view/street2point.php";
   break; 
+  case 'home':
+   include "view/home.php";
+   break;
  case 'lienhe':
   include "view/lienhe.php";
   break; case 'info':
@@ -15,7 +18,6 @@ switch ($_GET['act']){
    break;
    case 'login':
     include'model/connect.php';
-    include'model/user.php';
     if((isset($_POST['login']))&&($_POST['login'])){
     $u = $_POST['username'];
     $p = $_POST['password'];
