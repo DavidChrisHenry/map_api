@@ -1,11 +1,19 @@
 <?php 
- function checkuser($user,$pass){
-  $conn = new mysqli('localhost','root','','map_api');
-  $sql = "SELECT * FROM user WHERE username='".$user."'AND password='".$pass."'";
-  $stmt = $conn->prepare($sql);
-  $stmt->execute();
-  $row=mysqli_fetch_assoc($stmt);
-  $kq = $stmt->fetchAll();
-  return $kq[0].['role'];
- }
+    if((isset($_POST['login']))&&($_POST['login'])){
+      $u = $_POST['username'];
+      $p = $_POST['password'];
+      $sql = "select * from user where username='$u' and password='$p' and role='0'";
+      $rs = mysqli_query($conn,$sql);
+      $data = mysqli_fetch_assoc($rs);
+      if(mysqli_num_rows($rs) > 0 ){
+        echo "<script>alert('Bạn đã đăng nhập');</script>";
+        include 'view/home.php';
+      }else{
+      echo "<script>alert('Tên người dùng không tồn tại');</script>";
+      session_start();
+       ob_start();
+       if((isset($_SESSION['login']))){
+        unset($_SESSION['login']);
+       }
+        include 'login.php';}}
 ?>
