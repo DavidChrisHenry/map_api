@@ -8,6 +8,7 @@ ob_start();
       $rs = mysqli_query($conn,$sql);
       $object= array($u,$p);
       $_SESSION['login'] = $object;
+      var_dump($_SESSION['login']);
       if(mysqli_num_rows($rs) > 0 ){
         if(isset($_SESSION['login'])){
         echo "<script>alert('Bạn đã đăng nhập');</script>";
