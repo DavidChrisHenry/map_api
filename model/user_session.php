@@ -5,9 +5,8 @@ if((isset($_POST['login']))&&($_POST['login'])){
  $object= array($u,$p);
  $_SESSION['login'] = $object;
  if(!(isset($_SESSION['login']))){
-  unset($_SESSION['login']);
   echo "Bạn cần đăng nhập";
-  include 'login.php';
+  include('location: login.php');
  }
 }
 ?>

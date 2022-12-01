@@ -7,9 +7,10 @@
       $object= array($u,$p);
       $_SESSION['login'] = $object;
       if(mysqli_num_rows($rs) > 0 ){
+        if(isset($_SESSION['login'])){
         echo "<script>alert('Bạn đang đăng nhập với tư cách Admin!');</script>";
         include 'view/home.php';
-      }else{
+      }}else{
         unset($_SESSION['login']);
          header('location: login.php');
         }}
