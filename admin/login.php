@@ -16,7 +16,7 @@
  <h5 class="card-title mb-5 fw-light fs-5">Admin Login</h5>
  <form action="index.php?act=login" method="post">
   <input type="text" placeholder="username" name="username">
-  <input type="text" placeholder="username" name="password">
+  <input type="text" placeholder="password" name="password">
   <input type="submit" value="Đăng nhập" name="login">
  </form>
 </body>

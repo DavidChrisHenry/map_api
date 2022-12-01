@@ -18,5 +18,6 @@ switch ($_GET['act']){
     include '../model/admin_logout.php';
    break;
 }
+   include '../model/admin_session.php';
 // login
 ?>

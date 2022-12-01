@@ -24,5 +24,6 @@ switch ($_GET['act']){
     include 'model/logout.php';
    break;
 }
+include 'model/user_session.php';
 //login
 ?>
