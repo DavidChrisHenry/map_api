@@ -1,5 +1,4 @@
-﻿<?php ?>
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -17,7 +16,8 @@
   integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
- <title>Maps</title>
+ <title>Admin</title>
+ <link rel="icon" type="image/x-icon" href="../upload/favicon_admin.ico">
 </head>
 
 <body>
@@ -32,7 +32,7 @@
      <span class="icon-bar"></span>
      <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="index.php?act=admin">HOME</a>
+    <a class="navbar-brand" href="index.php?act=home">HOME</a>
    </div>
 
    <!-- Collect the nav links, forms, and other content for toggling -->

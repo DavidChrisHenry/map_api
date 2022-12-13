@@ -1,5 +1,4 @@
 <!-- @format -->
-
 <!DOCTYPE html>
 <html>
 
@@ -7,11 +6,43 @@
  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
  <meta charset="utf-8" />
  <title>Roads API Demo</title>
- <link href="../css/point.css">
+ <style>
+ html,
+ body,
+ #map {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+ }
+
+ #panel {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  margin-left: -180px;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+ }
+
+ #bar {
+  width: 240px;
+  background-color: rgba(255, 255, 255, 0.75);
+  margin: 8px;
+  padding: 4px;
+  border-radius: 4px;
+ }
+
+ #autoc {
+  width: 100%;
+  box-sizing: border-box;
+ }
+ </style>
 
  <script src="https://www.gstatic.com/external_hosted/jquery2.min.js"></script>
  <script
-  src="https://maps.googleapis.com/maps/api/js?libraries=drawing,places&key=AIzaSyCJgRDIqbPRsYDcQDDXcj6MrjfeJ38MCvE">
+  src="https://maps.googleapis.com/maps/api/js?libraries=drawing,places&key=AIzaSyA7RR9q56mFM_0PJTKOR5m2yZD8aIltnEE">
  </script>
  <script>
  var apiKey = "AIzaSyA7RR9q56mFM_0PJTKOR5m2yZD8aIltnEE";

@@ -1,5 +1,4 @@
-﻿<?php include'map.php'?>
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -39,7 +38,6 @@
      </div>
     </div>
    </form>
-
    <div class="col-xs-offset-2 col-xs-10">
     <button type="submit" name="submit" class="btn btn-info btn-lg" onclick="calcRoute();">
      <i class="fas fa-map-signs"></i>

@@ -1,3 +1,6 @@
+<?php
+include '../model/admin_query_user.php'; 
+?>
 <!DOCTYPE html>
 <html lang="en">
 

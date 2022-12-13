@@ -6,10 +6,11 @@
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>login admin</title>
+ <title>Admin Login</title>
  <link href="../Content/bootstrap.min.css" rel="stylesheet" />
  <link href="view/app.css" type="css">
  <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+ <link rel="icon" type="image/x-icon" href="../upload/favicon_admin.ico">
 </head>
 
 <body>

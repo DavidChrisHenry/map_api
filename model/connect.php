@@ -1,2 +1,2 @@
 <?php 
-$conn = new mysqli('localhost','root','','map_api');
+$conn = new mysqli('localhost','root','','map_api'); ?>

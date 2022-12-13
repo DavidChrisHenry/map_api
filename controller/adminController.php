@@ -2,9 +2,13 @@
 //chuyen trang
 if(isset($_GET['act'])&&($_GET['act']))
 switch ($_GET['act']){
- case 'admin':
-  include "view/home.php";
-  break;
+   case 'home':
+      include 'view/home.php';
+      break;
+ case '/':
+   include '../model/connect.php';
+   include '../model/admin.php';
+   break;
  case 'lienhe':
   include "view/lienhe.php";
   break; case 'info':
@@ -12,12 +16,11 @@ switch ($_GET['act']){
    break; 
    case 'login':
     include '../model/connect.php';
-    include '../model/admin.php';
+    include '../model/admin_session.php';
    break;
    case 'logout':
     include '../model/admin_logout.php';
    break;
 }
-   include '../model/admin_session.php';
 // login
 ?>

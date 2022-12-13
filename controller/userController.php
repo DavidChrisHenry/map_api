@@ -3,6 +3,7 @@
 if(isset($_GET['act'])&&($_GET['act']))
 switch ($_GET['act']){
  case 'street':
+  include 'view/map.php';
   include "view/street2point.php";
   break; 
   case 'home':
@@ -18,12 +19,19 @@ switch ($_GET['act']){
    break;
    case 'login':
     include 'model/connect.php';
-    include 'model/user.php';
+    include 'model/user_session.php';
    break;
    case 'logout':
     include 'model/logout.php';
    break;
+   case 'signin1' :
+    header('location: signin.php');
+    break;
+  case 'signin':
+    include 'model/connect.php';
+    header('location: signin.php');
+  case 'login1':
+    header('location: login.php');
 }
-include 'model/user_session.php';
 //login
 ?>

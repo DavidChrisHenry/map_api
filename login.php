@@ -8,10 +8,11 @@ include "controller/userController.php";
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>User login</title>
+ <title>User Login</title>
  <link href="../Content/bootstrap.min.css" rel="stylesheet" />
  <link href="view/app.css" type="css">
  <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+ <link rel="icon" type="image/x-icon" href="upload/favicon.ico">
 </head>
 
 <body>
