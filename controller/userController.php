@@ -24,14 +24,9 @@ switch ($_GET['act']){
    case 'logout':
     include 'model/logout.php';
    break;
-   case 'signin1' :
-    header('location: signin.php');
+    case 'setting':
+      include 'view/setting.php';
     break;
-  case 'signin':
-    include 'model/connect.php';
-    header('location: signin.php');
-  case 'login1':
-    header('location: login.php');
 }
 //login
 ?>

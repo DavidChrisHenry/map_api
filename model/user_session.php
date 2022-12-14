@@ -1,6 +1,4 @@
 <?php 
-ob_start();
-session_start();
 if((isset($_POST['login']))&&($_POST['login'])){
   $u = $_POST['username'];
   $p = $_POST['password'];
@@ -10,6 +8,8 @@ if((isset($_POST['login']))&&($_POST['login'])){
   $_SESSION['login'] = $object;
   if(mysqli_num_rows($rs) > 0 ){
     $object= array($u,$p);
-    $_SESSION['login'] = $object;}else{ header('location: login.php');}
+    $_SESSION['login'] = $object;
+    echo("<script>alert('Bạn đã đăng nhập!')</script>");
+  }else{ header('location: login.php');}
    }
 ?>

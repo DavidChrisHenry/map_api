@@ -1,4 +1,5 @@
 ﻿<?php 
+session_start();
       include 'view/nav.php';
       include '../controller/adminController.php';
       include '../model/admin.php';
@@ -13,6 +14,7 @@
  <link href="view/css/app.css" type="css">
  <link href="../Content/bootstrap.min.css" rel="stylesheet" />
  <title>Admin</title>
+ <link rel="icon" type="image/x-icon" href="../upload/favicon_admin.ico">
 </head>
 
 <body>

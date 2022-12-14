@@ -1,4 +1,5 @@
 <?php 
+session_start();
 include 'view/nav.php';
 include "controller/userController.php";
 include "model/user.php";

@@ -45,7 +45,7 @@
   src="https://maps.googleapis.com/maps/api/js?libraries=drawing,places&key=AIzaSyA7RR9q56mFM_0PJTKOR5m2yZD8aIltnEE">
  </script>
  <script>
- var apiKey = "";
+ var apiKey = "AIzaSyA7RR9q56mFM_0PJTKOR5m2yZD8aIltnEE";
 
  var map;
  var drawingManager;
@@ -57,8 +57,8 @@
   var mapOptions = {
    zoom: 17,
    center: {
-    lat: -33.8667,
-    lng: 151.1955
+    lat: 10.869966746925371,
+    lng: 106.80324721573731
    },
   };
   map = new google.maps.Map(document.getElementById("map"), mapOptions);
