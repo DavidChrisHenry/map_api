@@ -30,7 +30,7 @@ include '../model/admin_query_user.php';
  <h1>Thông tin</h1>
  <h3>Thông tin tài khoản</h2>
   <?php 
- $sql = "select username from user";
+ $sql = "select username from user where username <> 'admin'";
  $result = mysqli_query($conn,$sql);
  ?>
   <div style="margin-left:30px;">
