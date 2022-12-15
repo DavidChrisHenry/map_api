@@ -1,0 +1,545 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tinos', serif;
+}
+body{
+    background-color: rgb(19, 19, 19);
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 70px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(191, 239, 255, 0.658);
+}
+header.sticky{
+    background-color: lightblue;
+}
+header:hover{
+    background-color: lightblue;
+}
+.logo img{
+    flex: 1;
+    width: 80px;
+    height: 50px;
+}
+.menu{
+    flex: 2;
+    display: flex;
+}
+.menu li{
+    padding: 15px 20px;
+    margin-right: 20px;
+    position: relative;
+    display: block;
+}
+header .menu ul li{
+    display: block;
+}
+.petmenu{
+    position: absolute;
+    width: 245px;
+    border: 1px solid rgb(133, 43, 2);
+    text-align: left;
+    visibility: hidden;
+    transition: 0.1s ;
+    z-index: 1;
+}
+
+.menu li:hover .petmenu{
+    visibility: visible;
+    top: 60px;
+    background-color:rgba(173, 216, 230, 0.712);
+}
+.phukien-menu{
+    position: absolute;
+    width: 200px;
+    border: 1px solid rgb(133, 43, 2);
+    text-align: left;
+    visibility: hidden;
+    transition: 0.1s ;
+    z-index: 1;
+}
+.menu li:hover .phukien-menu{
+    visibility: visible;
+    top: 60px;
+    background-color:rgba(173, 216, 230, 0.712);
+}
+.dichvumenu{
+    position: absolute;
+    width: 200px;
+    border: 1px solid rgb(133, 43, 2);
+    padding: 5px 0 5px ;
+    text-align: left;
+    visibility: hidden;
+    transition: 0.1s ;
+    z-index: 1;
+}
+.menu li:hover .dichvumenu{
+    visibility: visible;
+    top: 60px;
+    background-color:rgba(173, 216, 230, 0.712);
+}
+.menu li a{
+    font-size: 17px;
+    color: rgb(133, 0, 0);
+    font-weight: bold;
+    display: block;
+    line-height: 20px;
+}
+.petmenu li ul a{
+    font-weight: normal;
+    font: size 14px;
+    color: black;
+    border-bottom: 1px solid rgb(245, 78, 0);
+    margin-bottom: -50px;
+}
+.orthers{
+    flex: 1;
+    display: flex;
+    padding: 0 30px;
+}
+.orthers li{
+    padding: 15px 20px;
+    position: relative;
+    display: block;
+}
+.orthers li::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 50%;
+    background: #000;
+    position: absolute;
+    right: 0;
+    top: 30%;
+    transform: translate(-50%);
+}
+.orthers li:first-child input{
+    width: 100%;
+    border: none ;
+    border-bottom: 2px solid rgb(2, 2, 2);
+    border-left: 2px solid rgb(2, 2, 2);
+    color: black;
+    background: transparent;
+    outline: none ;
+    padding: 0 30px;
+}
+#userButton{
+    background-color: transparent;
+    border: none;
+    padding-left: 3px;
+    cursor: pointer;
+}
+
+/*-----------------------------------------------------ICONBAR---------------------------------------------------*/
+.icon-bar {
+    position: fixed;
+    top: 29%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+    z-index: 1;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .youtube {
+    background: #bb0000;
+    color: white;
+  }
+  .iconphone {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .ig {
+    background: #a50deb;
+    color: white;
+  }
+.trangchu{ /*chinh*/
+    height: 100%;
+    margin-left: 30px;
+    margin-top: 80px;
+    border-bottom: 2px solid white;
+}
+.trangchu ul{
+    list-style:none;
+}
+.trangchu ul li{
+    font-size: 20px;
+    display: inline-block;
+}
+.trangchu ul li a{
+    font-size: 20px;
+    color: orange;
+ 
+}
+.trangchu ul li .BD1{
+    border-bottom: 2px solid white;
+}
+.dong1{
+    font-size: 30px;
+    margin: 20px auto;
+    margin-left: 600px;
+    color: rgb(223, 132, 13);
+}
+.cat1 img { /*chinh*/
+    float: left;
+    margin-left:30px;
+    max-width: 100%;
+}
+.sale{
+    margin-left: 600px;
+    height: 50%;
+    background-color:grey;
+    border: 10px solid grey;
+}
+.sale ul{
+    list-style:none;
+}
+.sale ul li{
+    display: inline-block;
+}
+.unline-decoration-text{
+    padding-left: 20px;
+    color: white;
+    text-decoration-line: line-through ;
+    text-align: normal;
+
+}
+.normal{
+    color: orange;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.word1 {
+    color: rgb(207, 207, 207);
+    margin-top: 20px;
+    margin-left: 600px;
+    letter-spacing: 1px;
+}
+
+/* modal */
+.giohang{
+    margin-top: 50px;
+    margin-left:700px;
+    object-fit: cover;
+    color: orange;
+    text-decoration-style: bold;
+    border-radius: 0%;
+    width: 300px;
+    height: 40px;
+    padding: 8px;
+    text-align: center;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+.modal-content {
+    margin: 0 auto;
+    width: 950px;
+    height: 64;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    background-clip: padding-box;
+    border: none;
+    border-radius:1rem;
+    outline: 0;
+  
+  }
+  
+.modal-body {
+    padding: 1rem;
+  }
+  
+  .modal-footer {
+    display: flex;
+    border-top: 1px solid #aaaaaa;
+    padding: 1rem;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-top: 1px solid #aaaaaa;
+    padding: 1rem;
+  }
+  
+  .modal-footer>:not(:first-child) {
+    margin-left: .25rem;
+  }
+  .btn {
+    cursor: pointer;
+    outline: none;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: all .2s ease-in-out;
+  }
+  .btn-danger{
+      background-color: lightcoral;
+      margin: auto;
+  }
+  .btn-danger:hover{
+      background-color: red;
+  }
+  .btn-secondary {
+    color: #292b2c;
+    background-color: #fff;
+    border-color: #ccc;
+  }
+.btn-secondary:hover{
+    color:white;
+    background-color: rgb(133, 43, 2);
+    border-color: rgb(133, 43, 2);
+}
+  .btn-primary {
+    color: #292b2c;
+    background-color: #fff;
+    border-color: #ccc;
+  }
+  .btn-primary:hover{
+    color:white;
+    background-color: rgb(133, 43, 2);
+    border-color: rgb(133, 43, 2);
+  }
+  .modal-header {
+    margin-bottom: 13px;
+    font-size: 16px;
+    padding: 20px;
+    background: rgb(133, 43, 2);
+  }
+  .modal-title{
+        font-size: 25px;
+        line-height: 30px;
+        color: #fff;
+        font-weight: 400;
+        display: inline-block;
+  }
+  .close {
+    margin-left: 450px;
+    color: #aaaaaa;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  
+  .close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .cart-row{
+    border-top: solid 1px #e1e1e1;
+        border-bottom: solid 1px #e1e1e1;
+        border-left: solid 1px #e1e1e1;
+        border-right: solid 1px #e1e1e1;
+        float: left;
+        width: 100%;
+        clear: both;
+        background: #f9f9f9;
+        box-sizing: border-box;
+        
+  }
+  .cart-row div{
+    display: inline-block;
+    margin: 20px auto;
+  }
+  .cart-row .text-left{
+    padding: 10px 10px; 
+    text-align: center;   
+  }
+  .text-left{
+    text-align: left;
+    
+  }
+  .text-center{
+    text-align: center;
+    padding: 10px 10px;
+  }
+  .cart-items{
+    padding: 30px 0px;
+    height: 155px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    border-left: solid 1px #ebebeb;
+  }
+  .cart-quantity-input {
+    height: 40px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: #eee;
+    color: rgb(231, 106, 48);
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-left: 60px;
+  }
+  .cart-item-title{
+    margin-top: 200px;
+    margin-left: 70px;
+    margin: 0 0 15px 0;
+    text-align: center;
+    padding: 0px 20px;
+  }
+
+
+
+  #cart {
+    font-size: 20px;
+    color: #fff;
+    background: rgb(133, 43, 2);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    outline: none;
+    margin-left: 1rem;
+    padding: 12px;
+    cursor: pointer;
+  }
+  
+  #cart:hover {
+    border-color: #fff;
+  }
+
+.word4 h3{
+  font-size: 22px;
+  color: rgb(177, 177, 177);
+  padding-bottom: 20px;
+}
+h4{
+  font-size: 20px;
+  color: chocolate;
+}
+.Mota{ /*chinh*/
+    font-size: 30px;
+    color: orange;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-bottom:4px solid orange;
+}
+.word3{ /*chinh*/
+    margin-top: 20px;
+    margin-left: 55px;
+    letter-spacing: 1px;
+    color:rgb(207, 207, 207);
+    font-size: 20px;
+}
+
+.image-cat2{ /*chinh*/
+    position: relative;
+    margin-top: 25px ; 
+    margin-left: 50px;
+}
+.word4{ /*chinh*/
+    margin-top: 570px;
+    margin-left: 55px;
+    margin-bottom: 30px;
+    position: relative;
+    letter-spacing: 1px;
+}
+.word4 p{
+    color:rgb(207, 207, 207);
+    margin-bottom: 10px;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.word4 ul li{
+    color:rgb(207, 207, 207);
+    margin:5px auto;
+}
+.word4 ul{
+    list-style: none;
+}
+
+/*footer*/
+.footerphoto{
+    text-align: center;
+    border-top: 4px solid orange;
+}
+.footerphoto img{
+    margin: 50px;
+    height: 230px;
+    width: 1021px;
+}
+
+.footertitle{
+    display: flex;
+    color: rgb(255, 130, 14);
+    margin-left: 100px;
+    
+}
+.footertitle div{
+    margin: 10px;
+    padding: 20px;
+    font-size: 15px;
+    line-height: 3em;
+}
+.footertitle div a{
+    color: rgb(247, 183, 141);
+}
+.footertitle div a:hover{
+    text-decoration: none ;
+    font-weight: 900;
+    text-shadow: 0px 5px 5px  rgb(245, 129, 52), 0px 3px 3px rgb(255, 253, 253);
+}
+.footertitle div h4{
+    font-size: 20px;
+    line-height: 2em;
+    border-bottom: 1px solid rgb(145, 5, 0);
+}
+

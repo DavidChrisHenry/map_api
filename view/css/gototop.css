@@ -1,0 +1,17 @@
+.gototop {
+    z-index: 100;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+}
+
+
+.gototop a {
+    display: block;
+    padding: 20px 15px;
+}
+
+.mui_ten{
+    width: 35px;
+}

@@ -1,0 +1,135 @@
+/*phan đk*/
+main{
+    margin: 0 auto; 
+    width: 40%;
+    
+}
+button {
+    background-color: #04AA6D;
+    color: white;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+.dangky{
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: sienna;
+    border: transparent;
+    font-size: 30px;
+    width: 200px;
+    height: 40px;
+}
+
+form > h1{
+    margin: 80px 0 20px;
+    color: rgb(199, 233, 255);
+    width: 500px;
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+}
+form > h2{
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+form {
+    margin: 5% auto 15% auto; 
+    width: 40%; 
+    color: rgb(236, 158, 69);
+    margin-bottom: 10px;
+  }
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: rgba(104, 104, 104, 0.315);
+    outline: none;
+  }
+.dky i{
+    font-size: 1.2rem;
+    line-height: 70px;
+    margin-left: 10px;
+}
+.dntk{
+    font-size: 15px;
+    margin-left: 40px;
+    color: white;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: transparent;
+    border: 1px solid #dbdbdb;
+  }
+
+
+
+/*Phần đn*/
+main{
+    margin: 0 auto; 
+    width: 40%;
+}
+
+h1{
+    margin-left: 40px;
+    margin-top: 80px;
+    color: white;
+    width: 500px;
+}
+
+.dangnhap{
+    margin-left: 40px;
+    margin-top: 50px;
+    color:white;
+    background-color: sienna;
+    font-size: 30px;
+    width: 500px;
+}
+
+.dnhap{
+    font-size: 20px;
+    margin-left: 40px;
+    width: 300px;
+    height: 40px;
+    background-color: rgb(19, 19, 19);
+    color: white;
+    margin-top: 40px;
+}
+.dktk{
+    font-size: 15px;
+    margin-left: 40px;
+    margin-top: 10px;
+    color: white;
+}
+.dnhap input{
+    font-size: 20px;
+    width: 500px;
+    height: 35px;
+    background-color: orange;
+    color: blue;
+    border: 2px solid #08BFBF;
+    border-bottom: 2px solid #08BFBF;
+}
+
+.container {
+    margin-top: 10px;
+    padding: 30px;
+  }
+  
+span.password {
+    float: right;
+}
+.custom-dky{
+    margin-left: 421px!important;
+}
+h2.cus-head2 {
+    padding-left: 550px;
+}
+

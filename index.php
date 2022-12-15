@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include 'view/nav.php';
+include 'view/header.php';
 include "controller/userController.php";
 include "model/user.php";
 ?>
@@ -16,9 +16,14 @@ include "model/user.php";
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="shortcut icon" href="upload/favicon-16x16.png" type="image/png">
  <title>Maps</title>
+ <link href="view/css/doan.css" type="text/css" rel="stylesheet">
+ <link href="view/css/gototop.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
 </body>
 
 </html>
+<?php 
+include 'view/footer.php';
+?>

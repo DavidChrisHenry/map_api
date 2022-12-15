@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tinos', serif;
+
+}
+body{
+    background-color: rgb(19, 19, 19);
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/*------------------------------HEADER-----------------------------------------*/
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 70px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(191, 239, 255, 0.658);
+}
+header.sticky{
+    background-color: lightblue;
+}
+header:hover{
+    background-color: lightblue;
+}
+.logo img{
+    flex: 1;
+    width: 80px;
+    height: 50px;
+}
+.menu{
+    flex: 2;
+    display: flex;
+}
+.menu li{
+    padding: 15px 20px;
+    margin-right: 20px;
+    position: relative;
+    display: block;
+}
+header .menu ul li{
+    display: block;
+}
+.petmenu{
+    position: absolute;
+    width: 245px;
+    border: 1px solid rgb(133, 43, 2);
+    text-align: left;
+    visibility: hidden;
+    transition: 0.1s ;
+    z-index: 1;
+}
+.menu li:hover .petmenu{
+    visibility: visible;
+    top: 60px;
+    background-color:rgba(173, 216, 230, 0.712);
+}
+.phukien-menu{
+    position: absolute;
+    width: 200px;
+    border: 1px solid rgb(133, 43, 2);
+    text-align: left;
+    visibility: hidden;
+    transition: 0.1s ;
+    z-index: 1;
+}
+.menu li:hover .phukien-menu{
+    visibility: visible;
+    top: 60px;
+    background-color:rgba(173, 216, 230, 0.712);
+}
+.dichvumenu{
+    position: absolute;
+    width: 200px;
+    border: 1px solid rgb(133, 43, 2);
+    padding: 5px 0 5px ;
+    text-align: left;
+    visibility: hidden;
+    transition: 0.1s ;
+    z-index: 1;
+}
+.menu li:hover .dichvumenu{
+    visibility: visible;
+    top: 60px;
+    background-color:rgba(173, 216, 230, 0.712);
+}
+.menu li a{
+    font-size: 17px;
+    color: rgb(133, 0, 0);
+    font-weight: bold;
+    display: block;
+    line-height: 20px;
+}
+.petmenu li ul a{
+    font-weight: normal;
+    font-size: 14px;
+    color: black;
+    border-bottom: 1px solid rgb(245, 78, 0);
+    margin-bottom: -50px;
+}
+
+.orthers{
+    flex: 1;
+    display: flex;
+    padding: 0 30px;
+}
+.orthers li{
+    padding: 15px 20px;
+    position: relative;
+    display: block;
+    
+}
+.orthers li::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 50%;
+    background: #000;
+    position: absolute;
+    right: 0;
+    top: 30%;
+    transform: translate(-50%);
+}
+.orthers li:first-child input{
+    width: 100%;
+    border: none ;
+    border-bottom: 2px solid rgb(2, 2, 2);
+    border-left: 2px solid rgb(2, 2, 2);
+    color: black;
+    background: transparent;
+    outline: none ;
+    padding: 0 30px;
+}
+#userButton{
+    background-color: transparent;
+    border: none;
+    padding-left: 3px;
+    cursor: pointer;
+}
+
+/*-----------------------------------------------------ICONBAR---------------------------------------------------*/
+.icon-bar {
+    position: fixed;
+    top: 29%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+    z-index: 1;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .youtube {
+    background: #bb0000;
+    color: white;
+  }
+  .iconphone {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .ig {
+    background: #a50deb;
+    color: white;
+  }
+.photodog img{
+    width: 100%;
+}
+
+.word{
+    border: rgb(133, 0, 0) solid 10px;
+    background-color: rgb(133, 0, 0);
+}
+
+#dog{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.section-dog{
+  width: 280px;
+  margin: 40px 45px;
+}
+
+.picture{
+    border-radius: 20px 20px;
+    background-color: white;
+}
+
+.picture img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.desc{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.unline-decoration-text{
+    font-size: 20px;
+    color: darkgray;
+    text-decoration-line: line-through;
+    text-align: normal;
+}
+
+.normal{
+    font-size: 20px;
+}
+
+.picture:hover{
+    background-color:rgba(179, 179, 179, 0.705);
+    color: rgb(255, 156, 89);
+}
+
+.pagination a {
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+  
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.pagination{
+    margin: 0 auto;
+    width: 25%;
+}
+
+/*footer*/
+.footerphoto{
+    text-align: center;
+}
+
+.footerphoto img{
+    margin: 50px;
+    height: 230px;
+    width: 1021px;
+}
+
+.footertitle{
+    display: flex;
+    color: rgb(255, 130, 14);
+    margin-left: 100px;
+    
+}
+.footertitle div{
+    margin: 10px;
+    padding: 20px;
+    font-size: 15px;
+    line-height: 3em;
+}
+.footertitle div a{
+    color: rgb(247, 183, 141);
+}
+.footertitle div a:hover{
+    text-decoration: none ;
+    font-weight: 900;
+    text-shadow: 0px 5px 5px  rgb(245, 129, 52), 0px 3px 3px rgb(255, 253, 253);
+}
+.footertitle div h4{
+    font-size: 20px;
+    line-height: 2em;
+    border-bottom: 1px solid rgb(145, 5, 0);
+}
+
