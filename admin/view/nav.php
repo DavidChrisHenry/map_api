@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿<?php 
+?>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -41,7 +43,7 @@
      <li class="active"><a href="index.php?act=info">Thông tin <span class="sr-only">(current)</span></a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-     <li><a href="index.php?act=lienhe">Liên hệ</a></li>
+     <li><a href="index.php?act=quanli">Quản lý sản phẩm</a></li>
      <li class="dropdown">
       <a href="index.php?act=them" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
        aria-expanded="false">Thêm <span class="caret"></span></a>

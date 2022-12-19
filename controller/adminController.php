@@ -9,8 +9,8 @@ switch ($_GET['act']){
    include '../model/connect.php';
    include '../model/admin.php';
    break;
- case 'lienhe':
-  include "view/lienhe.php";
+ case 'quanli':
+  include "view/quanli.php";
   break; case 'info':
    include "view/thongtin.php";
    break; 

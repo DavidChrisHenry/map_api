@@ -1,4 +1,5 @@
-﻿<?php 
+﻿<?php     
+ob_start();
 session_start();
       include 'view/nav.php';
       include '../controller/adminController.php';

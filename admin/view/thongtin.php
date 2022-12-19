@@ -1,6 +1,3 @@
-<?php
-include '../model/admin_query_user.php'; 
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,11 +5,16 @@ include '../model/admin_query_user.php';
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Document</title>
+ <title>Admin</title>
  <style>
+ .custom-table-2 td,
+ tr {
+  padding-right: 20px;
+ }
+
  table {
   border-collapse: collapse;
-  width: 30%;
+  width: 40%;
  }
 
  tr:hover {
@@ -20,8 +22,9 @@ include '../model/admin_query_user.php';
   color: #ffffff;
  }
 
- td {
-  padding: 20px;
+ td,
+ th {
+  padding-right: 20px;
  }
  </style>
 </head>
@@ -29,8 +32,11 @@ include '../model/admin_query_user.php';
 <body>
  <h1>Thông tin</h1>
  <h3>Thông tin tài khoản</h2>
+  <?php
+include '../model/connect.php'; 
+?>
   <?php 
- $sql = "select username from user where username <> 'admin'";
+ $sql = "select username,password from user where username <> 'admin'";
  $result = mysqli_query($conn,$sql);
  ?>
   <div style="margin-left:30px;">
@@ -43,41 +49,37 @@ include '../model/admin_query_user.php';
       <?php while($row=mysqli_fetch_assoc($result)):?>
      <tr>
       <td><?=$row['username']?></td>
-      <td><?=$row['username']?></td>
+      <td><?php echo (md5($row['password']))?></td>
      </tr>
      <?php endwhile;?>
     </tbody>
    </table>
   </div>
-  <h3>Thông tin tìm kiếm</h2>
-   <?php 
- $sql = "select * from search";
+  <h3>Thông tin mua hàng</h3>
+  <?php 
+ $sql = "select * from mua_hang";
  $result = mysqli_query($conn,$sql);
  ?>
-   <div style="margin-left:30px;">
-    <table>
-     <tbody>
-      <tr>
-       <td><b>Username</b></td>
-       <td><b>id Search</b></td>
-       <td><b>From</b></td>
-       <td><b>To</b></td>
-       <td><b>Time</b></td>
-       <td><b>Far</b></td>
-      <tr>
-       <?php while($row=mysqli_fetch_assoc($result)):?>
-      <tr>
-       <td><?=$row['username']?></td>
-       <td><?=$row['id_search']?></td>
-       <td><?=$row['from']?></td>
-       <td><?=$row['to']?></td>
-       <td><?=$row['time']?></td>
-       <td><?=$row['far']?></td>
-      </tr>
-      <?php endwhile;?>
-     </tbody>
-    </table>
-   </div>
+  <div style="margin-left:30px;">
+   <table>
+    <tbody class="custom-table-2">
+     <tr>
+      <td><b>ID</b></td>
+      <td><b>Name</b></td>
+      <td><b>Hash</b></td>
+      <td><b>PrevHash</b></td>
+     <tr>
+      <?php while($row=mysqli_fetch_assoc($result)):?>
+     <tr>
+      <td><?=$row['id']?></td>
+      <td><?=$row['username']?></td>
+      <td><?=$row['hash']?></td>
+      <td><?=$row['prevhash']?></td>
+     </tr>
+     <?php endwhile;?>
+    </tbody>
+   </table>
+  </div>
 </body>
 
 </html>

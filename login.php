@@ -12,7 +12,7 @@ include "controller/userController.php";
  <link href="../Content/bootstrap.min.css" rel="stylesheet" />
  <link href="view/app.css" type="css">
  <link href="../Content/bootstrap.min.css" rel="stylesheet" />
- <link rel="icon" type="image/x-icon" href="upload/favicon.ico">
+ <link rel="icon" type="image/x-icon" href="upload/img/PS_paw_logo_48f63a06-e9cf-4e19-a8f5-91c93a764bf5_32x32.png">
 </head>
 
 <body>
@@ -20,7 +20,7 @@ include "controller/userController.php";
  <form action="index.php?act=login" method="post">
   <input type="text" placeholder="username" name="username">
   <input type="text" placeholder="password" name="password">
-  <input type="submit" value="Đăng nhập" name="login">
+  <input type="submit" value="Đăng nhập" name="login1">
  </form>
 </body>
 

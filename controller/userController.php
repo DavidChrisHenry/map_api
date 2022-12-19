@@ -2,21 +2,23 @@
 //chuyen trang
 if(isset($_GET['act'])&&($_GET['act']))
 switch ($_GET['act']){
- case 'street':
-  include 'view/map.php';
-  include "view/street2point.php";
+ case 'chocanh':
+  include "view/chocanh.php";
   break; 
   case 'home':
    include "view/home.php";
+  break;
+  case 'meocanh':
+    include "view/meocanh.php";
    break;
+ case 'canhan':
+  include "view/canhan.php";
+  break;
  case 'lienhe':
   include "view/lienhe.php";
-  break; case 'info':
-   include "view/thongtin.php";
+  break; case 'gioithieu':
+   include "view/gioithieu.php";
    break; 
-   case 'point':
-   include "view/timdiadiem.php";
-   break;
    case 'login':
     include 'model/connect.php';
     include 'model/user_session.php';
@@ -27,6 +29,19 @@ switch ($_GET['act']){
     case 'setting':
       include 'view/setting.php';
     break;
+    // case 'muahang':
+    //   include 'model/muahang.php';
+    //    include 'view/chocanh.php';
+    //   break;
+    case 'chuongnem':
+      include 'view/chuongnem.php';
+      break;
+      case 'daydan':
+        include 'view/daydan.php';
+        break;
+      case 'giohang':
+        include 'view/giohang.php';
+        break;
 }
 //login
 ?>

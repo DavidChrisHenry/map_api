@@ -1,5 +1,6 @@
 <?php 
-       if(isset($_SESSION['login'])&&$_SESSION['login'][0]=="admin"){
+include 'connect.php';
+       if(isset($_SESSION['login'])){
       }else{
           header('location: login.php');
       }

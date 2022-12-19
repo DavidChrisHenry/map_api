@@ -4,23 +4,23 @@
 <body>
  <footer>
   <div class="footerphoto">
-   <img style="height: 230px;width: 1021px;" src="./img/footerphoto.png">
+   <img style="height: 230px;width: 1021px;" src="upload/img/footerphoto.png">
   </div>
   <section id="sectionfooter">
    <div class="footertitle">
     <div>
      <h4>VỀ CHÚNG TÔI</h4>
      <ul>
-      <li><a href="./thongtin.php">GIỚI THIỆU</a></li>
-      <li><a href="./danhmucsp.php">CỬA HÀNG PHỤ KIỆN</a></li>
+      <li><a href="">GIỚI THIỆU</a></li>
+      <li><a href="">CỬA HÀNG PHỤ KIỆN</a></li>
      </ul>
     </div>
     <div>
      <h4>HỖ TRỢ KHÁCH HÀNG</h4>
      <ul>
-      <li><a href="./huong_dan_mua_hang.php">HƯỚNG DẪN MUA HÀNG</a></li>
-      <li><a href="./chinh_sach_bao_hanh.php">CHÍNH SÁCH BẢO HÀNH</a></li>
-      <li><a href="./tra_gop.php">MUA TRẢ GÓP 0%</a></li>
+      <li><a href="">HƯỚNG DẪN MUA HÀNG</a></li>
+      <li><a href="">CHÍNH SÁCH BẢO HÀNH</a></li>
+      <li><a href="">MUA TRẢ GÓP 0%</a></li>
      </ul>
     </div>
     <div>
@@ -42,7 +42,7 @@
 
  </footer>
  <div class="gototop" id="gototop">
-  <a href="javascript:;" onclick="goToTop()"><img class="mui_ten" src="./img/mui-ten.png"></a>
+  <a href="javascript:;" onclick="goToTop()"><img class="mui_ten" src="upload/img/mui-ten.png"></a>
  </div>
  <script>
  window.onscroll = function() {

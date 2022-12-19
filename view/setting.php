@@ -11,10 +11,10 @@
 <body>
  <h1>Hello</h1>
  <?php
-echo "<b>Username is </b>" . $_SESSION['login'][0] . ".<br>";
+echo "<b>Username is </b>" . $_SESSION['login1'][0] . ".<br>";
 ?>
  <?php
-echo "<b>Password is </b>" . $_SESSION['login'][1] . ".<br>";
+echo "<b>Password is </b>" . $_SESSION['login1'][1] . ".<br>";
 ?>
 </body>
 

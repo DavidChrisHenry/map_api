@@ -1,6 +1,5 @@
 <?php 
-session_start();
 ob_start();
- unset($_SESSION['login']);
+ unset($_SESSION['login1']);
  header('location: login.php');
 ?>
