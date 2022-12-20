@@ -21,6 +21,13 @@ switch ($_GET['act']){
    case 'logout':
     include '../model/admin_logout.php';
    break;
+   case 'add':
+      include '../model/add.php';
+      include 'view/add.php';
+  break;
+  case 'delete':
+    include '../model/delete.php';
+  break;
 }
 // login
 ?>

@@ -1,7 +1,10 @@
 <?php 
+ob_start();
+session_start();
+if(isset($_GET['id'])&&($_GET['id'])){
  include 'connect.php';
  $name = $_SESSION['login1'][0]; 
- $id = "<script>document.getElementById('number').value</script>";
+ $id = $_GET['id']; 
  $sql = " select * from mua_hang where time=(select max(time) from mua_hang)";
  $result = mysqli_query($conn,$sql);
  $check = mysqli_fetch_array($result);
@@ -14,5 +17,5 @@
   echo "<script>alert('Bạn đã đặt hàng thành công!')</script>";
  }else{
   echo "<script>alert('Bạn đã mua sản phẩm này rồi!')</script>";
- }
+ }}
 ?>

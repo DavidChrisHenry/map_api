@@ -29,19 +29,22 @@ switch ($_GET['act']){
     case 'setting':
       include 'view/setting.php';
     break;
-    // case 'muahang':
-    //   include 'model/muahang.php';
-    //    include 'view/chocanh.php';
-    //   break;
+    case 'muahang':
+      include 'model/muahang.php';
+       include 'view/chocanh.php';
+      break;
     case 'chuongnem':
       include 'view/chuongnem.php';
       break;
       case 'daydan':
         include 'view/daydan.php';
         break;
-      case 'giohang':
+    case 'giohang':
         include 'view/giohang.php';
         break;
+    case 'add':
+          include 'model/add.php';
+      break;
 }
 //login
 ?>

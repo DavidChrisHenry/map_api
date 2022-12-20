@@ -41,6 +41,11 @@
  <div class="word">
   <h1 style="font-size: 130%; color:white; text-align: center ;">TRANG TRẠI CHÓ CẢNH</h1>
  </div>
+ <!-- <div style="text-align:center">
+  <h2>Chọn mặt hàng cần mua tho số thứ tự (1 - Cún con, 2 - Husky ...)</h2>
+  <input type="text" id="number">
+  <input type="submit" value="Đặt hàng" onclick="Insert();">
+ </div> -->
  <?php 
 include 'model/connect.php';
  $sql = "select * from san_pham";
@@ -61,16 +66,15 @@ include 'model/connect.php';
      <td><?=$row['name']?></td>
      <td><?=$row['price']?></td>
      <td><img src="<?=$row['img']?>" style="width:200px;height:200px"></td>
-     <td><input type="submit" id="<?php echo($i) ?>" value="Đặt hàng"></td>
+     <td><a href="model/muahang.php?id=<?php echo $row['id'] ?>"><input type="submit" value='Đặt hàng'><a>
+     </td>
     </tr>
+
+    </script>
     <?php $i++; endwhile;?>
    </tbody>
   </table>
  </div>
-
-
-
-
 </body>
 
 </html>

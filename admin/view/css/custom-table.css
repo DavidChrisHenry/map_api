@@ -1,0 +1,26 @@
+/** @format */
+
+.custom-table td,
+th {
+  padding: 20px;
+}
+
+.custom-table {
+  font-size: 5px;
+  text-align: center;
+}
+
+.custom-muahang {
+  padding: 10px;
+  background-color: #80ff87;
+}
+
+.custom-muahang:hover {
+  padding: 13px;
+  background-color: #32fb3d;
+}
+
+.word {
+  border: rgb(133, 0, 0) solid 10px;
+  background-color: rgb(133, 0, 0);
+}

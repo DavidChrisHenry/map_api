@@ -9,7 +9,9 @@
  <style>
  .custom-table-2 td,
  tr {
-  padding-right: 20px;
+  padding: 2px !important;
+  border: 1px solid;
+
  }
 
  table {
@@ -20,11 +22,6 @@
  tr:hover {
   background-color: #04AA6D;
   color: #ffffff;
- }
-
- td,
- th {
-  padding-right: 20px;
  }
  </style>
 </head>
@@ -39,7 +36,7 @@ include '../model/connect.php';
  $sql = "select username,password from user where username <> 'admin'";
  $result = mysqli_query($conn,$sql);
  ?>
-  <div style="margin-left:30px;">
+  <div style="margin-left:30px;" class="custom-table-2">
    <table>
     <tbody>
      <tr>
@@ -55,7 +52,7 @@ include '../model/connect.php';
     </tbody>
    </table>
   </div>
-  <h3>Thông tin mua hàng</h3>
+  <h3>Thông tin đặt hàng</h3>
   <?php 
  $sql = "select * from mua_hang";
  $result = mysqli_query($conn,$sql);
@@ -68,6 +65,7 @@ include '../model/connect.php';
       <td><b>Name</b></td>
       <td><b>Hash</b></td>
       <td><b>PrevHash</b></td>
+      <td><b>Time</b></td>
      <tr>
       <?php while($row=mysqli_fetch_assoc($result)):?>
      <tr>
@@ -75,6 +73,7 @@ include '../model/connect.php';
       <td><?=$row['username']?></td>
       <td><?=$row['hash']?></td>
       <td><?=$row['prevhash']?></td>
+      <td><?=$row['time']?></td>
      </tr>
      <?php endwhile;?>
     </tbody>
