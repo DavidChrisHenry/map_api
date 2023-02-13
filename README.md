@@ -1,7 +1,3 @@
 <!-- @format -->
 
-# map_api
-
-# chưa làm được session để login
-
-đang làm phần tạo bảng người dùng tìm kiếm đường đi và lưu vào database
+Sử dụng MYSQL, PHP, HTML/CSS, Javascript, Google Maps API
